@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b81d3426d0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./CSS/figuras.css">
+    <title>FIGURAS GEOMETRICAS</title>
+</head>
+<nav class="navbar">
+    <div class="contenedor">
+        <a href="./index.html">JAVASCRIPT</a>
+        <a href="./matrix.html">MATRIX</a>
+        <a href="./calculadora.html">CALCULADORA</a>
+        <a href="./paint.html">PAINT</a>
+    </div>
+</nav>
+<body>
+    <header>
+        <div class="logo">
+            <h1 class="logo-nombre">LAS ÁRES DE LAS FIGURAS GEOMÉTRICAS</h1>
+        </div>
+    </header>
+
+    <main>
+    <center>
+            <h2 class="triángulo">TRIÁNGULO</h2>
+            <img src="https://www.problemasyecuaciones.com/geometria2D/area/triangulo/Tg5.png" alt="" width="200px" height="200px"> 
+        <br>
+        
+        <div>
+            <input type="number" id="base" placeholder="Base" class="form-control">
+            <input type="number" id="altura" placeholder="Altura" class="form-control">
+            <button onclick="triángulo()" class="btn">Calcular área</button>
+        </div>
+        <br>
+        <div>
+            <label>Área: </label>
+            <div id="areaResultado">
+            </div>
+        </div>
+        <br>
+
+            <h2 class="paralelogramo">PARALELOGRAMO</h2>
+            <img src="https://www.neurochispas.com/wp-content/uploads/2021/03/formula-del-area-de-un-paralelogramo.png" alt="" width="200px" height="200px"> 
+        <br>
+        <div>
+            <input type="number" id="base1" placeholder="Base" class="form-control">
+            <input type="number" id="altura1" placeholder="Altura" class="form-control">
+            <button onclick="paralelogramo()" class="btn">Calcular área</button>
+        </div>
+        <br>
+        <div>
+            <label>Área: </label>
+            <div id="paralelogramo">
+            </div>
+        </div>
+        <br>
+
+
+        <h2 class="rectángulo">RECTÁNGULO</h2>
+            <img src="https://www.neurochispas.com/wp-content/uploads/2021/03/formula-de-area-de-un-rectangulo.png" alt="" width="250px"  height="200px">
+        <br>
+        <div>
+            <input type="number" id="base2" placeholder="Base" class="form-control">
+            <input type="number" id="altura2" placeholder="Altura" class="form-control">
+            <button onclick="rectángulo()" class="btn">Calcular área</button>
+        </div>
+        <br>
+        <div>
+            <label>Área: </label>
+            <div id="rectángulo">
+            </div>
+        </div>
+        <br>
+
+
+        <h2 class="cuadrado">CUADRADO</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnCz2cBVcAJGhuCl_TYo-zrvnlPyfnlXAYDA&usqp=CAU" alt="" width="200px" height="200px">
+        <br>
+        <div>
+            <input type="number" id="lado" placeholder="Lado" class="form-control">
+            <button onclick="cuadrado()" class="btn">Calcular área</button>
+        </div>
+        <br>
+        <div>
+            <label>Área: </label>
+            <div id="cuadrado">
+            </div>
+        </div>
+        <br>
+
+
+        <h2 class="rombo">ROMBO</h2>
+            <img src="https://www.neurochispas.com/wp-content/uploads/2021/03/formula-del-area-de-un-rombo.png" alt="" width="200px" height="200px">
+        <br>
+        <div>
+            <input type="number" id="dv" placeholder="Diagonal Vertical" class="form-control">
+            <input type="number" id="dh"
+            placeholder="Diagonal Horizontal" class="form-control">
+            <button onclick="rombo()" class="btn">Calcular área</button>
+        </div>
+        <br>
+        <div>
+            <label>Área: </label>
+            <div id="rombo">
+            </div>
+        </div>
+        <br>
+
+
+        <h2 class="cometa">COMETA</h2>
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20190627125338/Area-of-Kite-when-both-diagonals-are-given-1.jpg" alt="" width="250px" height="200px">
+        <br>
+        <div>
+            <input type="number" id="dv1" placeholder="Diagonal Vertical" class="form-control">
+            <input type="number" id="dh1"
+            placeholder="Diagonal Horizontal" class="form-control">
+            <button onclick="cometa()" class="btn">Calcular área</button>
+        </div>
+        <br>
+        <div>
+            <label>Área: </label>
+            <div id="cometa">
+            </div>
+        </div>
+        <br>
+
+
+        <h2 class="trapecio">TRAPECIO</h2>
+        <img src="https://www.neurochispas.com/wp-content/uploads/2021/03/formula-del-area-de-un-trapecio.png" alt=""
+        width="250px" height="200px">
+        <br>
+        <div>
+            <input type="number" id="BM"
+            placeholder="Base Mayor" class="form-control">
+            <input type="number" id="bm"
+            placeholder="Base Menor" class="from-control">
+            <input type="number" id="altura3"
+            placeholder="Altura" class="from-control">
+            <button onclick="trapecio()" class="btn">Calcular área</button>
+        </div>
+        <br>
+        <div>
+            <label>Área: </label>
+            <div id="trapecio">
+            </div>
+        </div>
+
+
+        <h2 class="circulo">CIRCULO</h2>
+        <img src="https://www.neurochispas.com/wp-content/uploads/2021/03/formula-del-area-de-un-circulo.png" alt="" width="200px" height="200px">
+    <br>
+    <div>
+        <input type="number" id="radio" placeholder="Radio" class="form-control">
+        <button onclick="circulo()" class="btn">Calcular área</button>
+    </div>
+    <br>
+    <div>
+        <label>Área: </label>
+        <div id="circulo">
+        </div>
+    </div>
+    <br>
+
+    </center>
+    </main>
+
+    <script src="./JS/FIGURAS.js"></script>
+
+</body>
+</html>

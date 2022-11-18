@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.navbar {
+	background: rgb(0, 1, 2);
+	position: sticky;
+	top: 0;
+}
+
+.navbar a {
+	color:darkgreen;
+	display: inline-block;
+	padding: 20px;
+	width: 100%;
+	text-align: center;
+	color: rgb(13, 151, 43);
+	transition: .3s ease-out all;
+}
+
+.navbar a:hover {
+	background: #1D2F3D;
+	color: #fff;
+	text-decoration: none;
+}
+
+.contenedor {
+	max-width: 1000px;
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.active{
+    background-color: grey;
+    color: beige;
+}

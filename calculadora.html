@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/calculadora.css">
+    <script src="https://kit.fontawesome.com/b81d3426d0.js" crossorigin="anonymous"></script>
+    <title>Calculadora</title>
+</head>
+<body id="body">
+    <header>
+        <div class="icon__menu">
+            <i class="fas fa-bars" id="btn_open"></i>
+        </div>
+    </header>
+
+    <div class="menu__side" id="menu_side">
+
+        <div class="name__page">
+            <i class="fab fa-youtube"></i>
+            <h4>Proyecto A03</h4>
+        </div>
+
+        <div class="options__menu">	
+
+            <a href="./index.html" class="selected">
+                <div class="option">
+                    <i class="fas fa-home" title="JAVASCRIPT"></i>
+                    <h4>JAVASCRIPT</h4>
+                </div>
+            </a>
+
+            <a href="./figuras.html">
+                <div class="option">
+                    <i class="far fa-file" title="FIGURAS GEOMETRICAS"></i>
+                    <h4>FIGURAS GEOMETRICAS</h4>
+                </div>
+            </a>
+            
+            <a href="./matrix.html">
+                <div class="option">
+                    <i class="far fa-file" title="MATRIX"></i>
+                    <h4>MATRIX</h4>
+                </div>
+            </a>
+
+            <a href="./paint.html">
+                <div class="option">
+                    <i class="far fa-file" title="PAINT"></i>
+                    <h4>PAINT</h4>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <form action="#" name="forms">
+            <input type="text" name="answer">
+            <div class="buttons">
+                <input type="button" value="AC" onclick="forms.answer.value = ''">
+                <input type="button" value="MC" onclick="forms.answer.value = forms.answer.value.substr(0, forms.answer.value.legenth -1)">
+                <input type="button" value="%" onclick="forms.answer.value += '%'">
+                <input type="button" value="/" onclick="forms.answer.value += '/'">
+            </div>
+            <div class="buttons">
+                <input type="button" value="7"onclick="forms.answer.value += '7'">
+                <input type="button" value="8"onclick="forms.answer.value += '8'">
+                <input type="button" value="9"onclick="forms.answer.value += '9'">
+                <input type="button" value="*"onclick="forms.answer.value += '*'">
+            </div>
+            <div class="buttons">
+                <input type="button" value="4"onclick="forms.answer.value += '4'">
+                <input type="button" value="5"onclick="forms.answer.value += '5'">
+                <input type="button" value="6"onclick="forms.answer.value += '6'">
+                <input type="button" value="-"onclick="forms.answer.value += '-'">
+            </div>
+            <div class="buttons">
+                <input type="button" value="1"onclick="forms.answer.value += '1'">
+                <input type="button" value="2"onclick="forms.answer.value += '2'">
+                <input type="button" value="3"onclick="forms.answer.value += '3'">
+                <input type="button" value="+"onclick="forms.answer.value += '+'">
+            </div>
+            <div class="buttons">
+                <input type="button" value="0"onclick="forms.answer.value += '0'">
+                <input type="button" value="00"onclick="forms.answer.value += '00'">
+                <input type="button" value="."onclick="forms.answer.value += '.'">
+                <input type="button" value="="onclick="forms.answer.value = eval(forms.answer.value)">
+            </div>
+        </form>
+    </div>
+    <script src="./js/CALCULADORA.js"></script>
+</body>
+</html>

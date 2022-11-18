@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    background-color: rgb(113, 128, 212);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas {
+    background-color: #fff;
+}
+
+
+.navbar {
+	background: rgb(3, 40, 78);
+	position: sticky;
+	top: 0;
+}
+
+.navbar a {
+	color:darkgreen;
+	display: inline-block;
+	padding: 20px;
+	width: 100%;
+	text-align: center;
+	color: rgb(40, 188, 199);
+	transition: .3s ease-out all;
+}
+
+.navbar a:hover {
+	background: #1D2F3D;
+	color: #fff;
+	text-decoration: none;
+}
+
+.contenedor {
+	max-width: 1000px;
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.active{
+    background-color: grey;
+    color: beige;
+}
